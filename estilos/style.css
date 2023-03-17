@@ -10,6 +10,8 @@ body , html {
     width: 100vw;
     height: 100vh;
     font-family: Arial, Helvetica, sans-serif;
+    overflow-x: hidden;
+    overflow-y: hidden;
 }
 
 header{
@@ -17,10 +19,7 @@ header{
     flex-direction: row;
     align-items: center;
     justify-content: flex-end;
-    text-align: center; 
     padding: 5px;
-    color: black;
-    text-decoration: none;
    }
 
    header a {
@@ -29,6 +28,9 @@ header{
     font-weight: normal;
     margin: 10px;
     text-decoration: none;
+    text-align: center;
+    color: black;
+    font-weight: 500;
    }
 
    header a#login {
@@ -40,40 +42,68 @@ header{
     font-size: 15px;
    }
 
-   section{
-   display: flex;
-   position: absolute;
-   top: 30%;
-   left: 50%;
-   transform: translate(-50% , -30%);
+   section.google{
+   width: 100%;
+   height: 200px;
    }
 
-   section > input {
-    width: 400px;
-    margin-top: 36%;
-    border-radius: 20px;
-    font-size: 25px;
-    padding: 5px 13px;
-    border: 0.5px solid rgba(0, 0, 0, 0.341);
+   section.google > img {
+    display: block;
+    position: relative;
+    top: 20%;
+    margin: 0 auto;
+    padding: 10px;
    }
+
+   section.pesquisa {
+    background-color: white;
+    width: 100%;
+    padding: 10px;
+   }
+
+   section.pesquisa > input {
+    display: block;
+    margin: 0 auto;
+    width: 500px;
+    height: 40px;
+    border: 1px solid #DADCE0;
+    border-radius: 20px;
+    padding: 7px 20px;
+    font-size: 20px;
+   }
+
+
+
 
    section.button {
-    position: absolute;
-    display: inline-block;
-    margin-top: 24vh;
+    width: 100%;
+    height: 30px;
+    position: relative;
    }
 
-   section > a {
-    padding: 10px 5px;
-    width: 110px;
-    background-color: #F8F9FA ;
+   section.button > div.button-2  {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin:  auto;
+    padding: 5px 10px;
+    background-color: white ;
     text-decoration: none;
     color: black;
    }
 
-   section > a:hover {
-    border: 1px solid dimgray;
-    border-radius: 2px;
+   section.button > div.button-2 > a {
+    background-color: #F8F9FA;
+    color: black;
+    text-decoration: none;
+    padding: 10px 10px;
+    border: none solid dimgray;
+    border-radius: 3px;
+    margin: 5px ;
+   }
+
+   section.button > div.button-2 > a:hover {
+    border: 1px solid #DADCE0;
    }
 
    content-wrap {
@@ -90,7 +120,7 @@ header{
    footer > div > p {
     width: 100%;
     background-color: #F2F2F2;
-    padding: 10px;
+    padding: 10px 20px;
    }
 
    footer > div.sobre > ul {
