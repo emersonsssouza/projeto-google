@@ -5,55 +5,65 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+    <link rel="shortcut icon" href="favicon/favicon.png" type="image/x-icon">
     <link rel="stylesheet" href="estilos/style.css" media="all">
     <title>Google</title>
 </head>
 
 <body>
     <header>
-        <a href="https://www.google.com/intl/pt/gmail/about/">Gmail</a>
-        <a href="https://www.google.com.br/imghp?hl=pt-BR&ogbl">Imagens</a>
-
-        <div class="app">
-            <a href=""><img src="Icons/app.png" alt=""></a>
+        <div class="conteudo">
+            <a class="content-link"
+                href="https://accounts.google.com/v3/signin/confirmidentifier?continue=https%3A%2F%2Fmail.google.com%2Fmail%2F%26ogbl%2F&emr=1&ifkv=ARZ0qKIPgPWBvQ0WNDQDGTAVaR5cXrCDN61STd-mpRSjfn8Z6-imB7azcyFMzmj_mzbN2SSCTIUOrg&ltmpl=default&ltmplcache=2&osid=1&passive=true&rm=false&scc=1&service=mail&ss=1&flowName=GlifWebSignIn&flowEntry=ServiceLogin&dsh=S2097578916%3A1711912856583822&theme=mn&ddm=0">Gmail</a>
+            <a class="content-link" href="https://www.google.com/imghp?hl=pt-BR&ogbl">Imagens</a>
+            <a href="" class="fas fa-bars"></a><!--Será colocada uma class fas bars-->
+            <a class="content-login" id=""
+                href="https://accounts.google.com/v3/signin/confirmidentifier?continue=https%3A%2F%2Fwww.google.com%2F&ec=GAZAmgQ&hl=pt-BR&ifkv=ARZ0qKKA5dZiHHrweetPDbrykz0_UGkmxTSA3S1jIIbqANyqhT4c6dKc-T4cg17UhSLJv_4UrrzjDQ&passive=true&flowName=GlifWebSignIn&flowEntry=ServiceLogin&dsh=S2114648101%3A1711912918447266&theme=mn&ddm=0">Fazer
+                login</a>
         </div>
-
-        <a id="login"
-            href="https://accounts.google.com/v3/signin/identifier?dsh=S420064293%3A1671407915251901&continue=https%3A%2F%2Fwww.google.com%2F&ec=GAZAmgQ&hl=pt-BR&passive=true&flowName=GlifWebSignIn&flowEntry=ServiceLogin&ifkv=AeAAQh4FM_CXhzvM2r9bhZHRwaEGWbdETCcK1EYEolWBYRSPcOK_UEG66X9qwfTq9MEpD97YAm5p">Fazer
-            login</a>
     </header>
 
-    <section class="google">
-        <img src="imagens/google.jpg" alt="Google">
-    </section>
+    <main>
+        <img src="imagens/google.png" alt="Google">
 
-    <section class="pesquisa">
-        <input type="search" name="Busca" id="search">
-    </section>
+        <div class="container-wrapper">
+            <div class="container">
+                <div class="input-wrapper">
+                    <input type="search" name="" id="" placeholder="">
+                    <i class="fas fa-search"></i>
+                    <i class="fas fa-microphone"></i>
+                    <i class="fas fa-image"></i>
+                </div>
+            </div>
+        </div>
 
-    <div class="button">
-        <button class="btn">
-            Pesquisa Google
-        </button>
+        <div class="main-btn">
+            <button>Pesquisa Google</button>
+            <button>Estou com Sorte</button>
+        </div>
+    </main>
 
-        <button class="btn">
-            Estou com sorte
-        </button>
-    </div>
-
-    
     <footer>
-        <div class="footer-links">
+        <div class="footer-conteudo">
             <a href="#">Brasil</a>
-            <a href="#">Privacidade</a>
-            <a href="#">Termos</a>
-            <a href="#">Configurações</a>
         </div>
-        <div class="footer-links">
-            <a href="#">Publicidade</a>
-            <a href="#">Negócios</a>
-            <a href="#">Como funciona a pesquisa</a>
-        </div>
+        <hr>
+
+        <section class="conteudo-footer">
+            <div class="footer-content">
+                <a href="#">Sobre</a>
+                <a href="#">Publicidade</a>
+                <a href="#">Negócios</a>
+                <a href="#">Como funciona a Pesquisa</a>
+            </div>
+            <div class="footer-content">
+                <a href="#">Privacidade</a>
+                <a href="#">Termos</a>
+                <a href="#">Configurações</a>
+            </div>
+        </section>
     </footer>
 
 </body>

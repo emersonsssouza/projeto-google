@@ -4,327 +4,303 @@
   margin: 0px;
   padding: 0px;
   box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 body {
   width: 100vw;
-  height: 100vh;
-  font-family: Arial, Helvetica, sans-serif;
+  background-color: white;
   overflow-x: hidden;
 }
 
 header {
+  width: 100vw;
+  padding: 1rem;
+  background-color: transparent;
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: flex-end;
-  padding: 5px;
 }
 
-div.app {
+.conteudo {
   display: flex;
-  justify-content: center;
+  justify-content: flex-end;
   align-items: center;
-  width: 40px;
+  width: max-content;
   height: 40px;
   padding: 5px;
-  border-radius: 50%;
 }
 
-header a > img {
-  width: 30px;
-  height: 30px;
-  padding: 1px;
-}
-
-div.app:hover {
-  background-color: rgba(105, 105, 105, 0.412);
-}
-
-header a {
-  margin-left: 20px;
-  font-size: 12.5px;
-  font-weight: normal;
-  margin: 10px;
-  text-decoration: none;
-  text-align: center;
+.conteudo a {
   color: black;
-  font-weight: 500;
+  text-decoration: none;
+  padding: 0rem 0.5rem;
 }
 
-header a:hover {
+.content-link {
+  font-size: 0.8rem;
+}
+
+.content-link:hover {
   text-decoration: underline;
 }
 
-header a#login {
-  background-color: #1b66ca;
-  padding: 10px 30px;
-  border: 0px solid transparent;
-  border-radius: 10px;
+a.content-login {
+  background-color: blue;
   color: white;
-  font-size: 15px;
+  font-size: 1rem;
+  padding: 0.5rem 1.5rem;
+  border: none;
+  border-radius: 0.5rem;
 }
 
-header a#login:hover {
-  text-decoration: none;
+main {
+  background-color: transparent;
+  width: auto;
+  margin: 12vh auto;
+  display: grid;
+  grid-template-columns: repeat(1fr, 1);
+  place-items: center;
+  gap: 1rem;
 }
 
-section.google {
+main img {
+  width: 20rem;
+}
+
+.container-wrapper {
+  width: 40vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container {
   width: 100%;
-  height: 200px;
+  background-color: transparent;
+  padding: 1rem;
+  border-radius: 15px;
 }
 
-section.google > img {
-  display: block;
-  position: relative;
-  top: 20%;
-  margin: 0 auto;
-  padding: 10px;
+.input-wrapper {
+  background-color: transparent;
+  padding: 0.5rem;
+  display: flex;
+  align-items: center;
+  gap: 0px;
+  border: 0.5px solid #70757a;
+  border-radius: 5rem;
 }
 
-section.pesquisa {
-  background-color: white;
+.input-wrapper i {
+  color: black;
+  padding: 1px 10px;
+  cursor: pointer;
+}
+
+.input-wrapper input {
   width: 100%;
-  padding: 10px;
-}
-
-section.pesquisa > input {
-  display: block;
-  margin: 0 auto;
-  width: 500px;
-  height: 40px;
-  border: 1px solid #dadce0;
-  border-radius: 20px;
-  padding: 7px 20px;
+  background-color: transparent;
+  color: black;
   font-size: 20px;
+  border: none;
+}
+
+.input-wrapper input:focus-visible {
   outline: none;
 }
 
-div.button {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    margin: 5px;
-    padding: 5px;
+main .main-btn button {
+  width: 8rem;
+  height: 2rem;
+  border: none;
+  font-size: 0.9rem;
+  cursor: pointer;
 }
 
-div.button > button.btn {
-    padding: 10px;
-    margin: 0px 10px;
-    background-color: #F8F9FA;
-    color: #202124;
-    font-weight: 100;
-    border: none;
-    cursor: pointer;
-    outline: none;
-}
-
-div.button > button.btn:hover {
-  outline: none;
-  box-shadow: 1px 1px 2px dimgray;
+main .main-btn button:hover {
+  box-shadow: 1px 1px 0.6px #70757a;
 }
 
 footer {
   width: 100vw;
-  display: inline;
-  position: absolute;
-  bottom: 0px;
-  background-color: #7a7a7a4c;
-  padding: 10px;
-  text-align: center;
-  width: 100vw;
-  height: 100px;
-}
-
-.footer-links {
+  position: fixed;
+  bottom: 0;
+  background-color: #F2F2F2;
+  padding: 0.5rem;
   display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.footer-conteudo {
+  display: flex;
+  flex-direction: row;
   flex-wrap: wrap;
-  justify-content: center;
-  gap: 20px;
-  margin-top: 10px;
+  justify-content: flex-start;
+  padding: 0rem 0.5rem;
+  margin-bottom: 0.1rem;
 }
 
-.footer-links a {
-  text-decoration: none;
+.conteudo-footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
   color: #70757a;
-  font-size: 13px;
+  padding: 0.2rem;
+  font-size: 0.9rem;
 }
 
-.footer-links a:hover {
-  text-decoration: underline;
+.conteudo-footer a,
+.footer-conteudo a,
+.footer-content a,
+.conteudo-footer {
+  color: black;
+  text-decoration: none;
+  padding: 0.7rem;
 }
 
-
-@media (min-width: 320px) and (max-width:480px) {
- section.google > img {
-    width: 200px;
-    height: 70px;
- }
- 
- section.pesquisa {
-    margin: auto;
- }
-
- section.pesquisa > input {
-    width: 340px;
-    margin: 1px auto;
-    display: block;
-    margin-top: -90px;
- }
-
- div.button {
-    display: none;
- }
-
- p.brasil {
-    background-color: white;
- }
-
- div.fundo-celular {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    flex-direction: row;
-    flex-wrap: wrap;
- }
-
- div.fundo-celular ul {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    align-items: center;
- }
-}
-
-/*@media (min-width: 481px) and (max-width: 768px) {
-    div.button {
-    margin: auto;
-    justify-content: center;
-    align-items: center;
-   }
-
-   div.btn-centro {
-    margin: auto;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-   }
-}
-*/
-
-/* Adicione as seguintes media queries ao final do seu arquivo CSS */
-
-/* Smartphones */
-@media (max-width: 480px) {
+@media only screen and (min-width: 320px) and (max-width: 640px) {
   header {
-    flex-direction: row;
-    justify-content: space-around;
+    justify-content: center;
   }
 
-  header > a {
-    font-size: 14.5px;
-  }
-  section.google > img {
-    width: 200px;
-    height: 90px;
+  .conteudo {
+    justify-content: center;
   }
 
-  section.pesquisa {
-    margin: 10px auto;
+  main {
+    width: auto;
+    justify-content: center;
   }
 
-  section.pesquisa > input {
-    width: 340px;
-    margin: 1px auto;
-    display: block;
-    margin-top: -80px;
+  .container-wrapper {
+    width: 100%;
   }
 
-  div.button {
+  footer {
     display: none;
   }
-
-  div.fundo-celular {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    flex-direction: row;
-    flex-wrap: wrap;
-  }
-
-  div.fundo-celular ul {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    align-items: center;
-  }
 }
 
-/* Tablets */
-@media (min-width: 481px) and (max-width: 768px) {
-  section > div.button {
-    margin: auto;
+@media only screen and (min-width: 375px) and (max-width:667px) {
+  header {
     justify-content: center;
-    align-items: center;
   }
 
-  div.btn-centro {
-    margin: auto;
-    display: flex;
+  .conteudo {
+    justify-content: center;
+  }
+
+  main {
+    width: auto;
+    justify-content: center;
+  }
+
+  .container-wrapper {
+    width: 100%;
+  }
+
+  footer {
+    display: none;
+  }
+}
+
+@media only screen and (min-width: 360px) and (max-width: 720px) {
+  header {
+    justify-content: center;
+  }
+
+  .conteudo {
+    justify-content: center;
+  }
+
+  main {
+    width: auto;
+    justify-content: center;
+  }
+
+  .container-wrapper {
+    width: 100%;
+  }
+
+  footer {
+    display: none;
+  }
+}
+
+@media only screen and (min-width: 375px) and (max-width: 812px) {
+  header {
+    justify-content: center;
+  }
+
+  .conteudo {
+    justify-content: center;
+  }
+
+  main {
+    width: auto;
+    justify-content: center;
+  }
+
+  .container-wrapper {
+    width: 100%;
+  }
+
+  footer {
+    display: none;
+  }
+}
+
+@media only screen and (min-width: 411px) and (max-width: 731px) {
+  header {
+    justify-content: center;
+  }
+
+  .conteudo {
+    justify-content: center;
+  }
+
+  main {
+    width: auto;
+    justify-content: center;
+  }
+
+  .container-wrapper {
+    width: 100%;
+  }
+
+  footer {
+    display: none;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  header {
+    justify-content: center;
+    width: 100%;
+  }
+
+  .conteudo {
+    width: 50%;
     justify-content: space-around;
-    align-items: center;
-  }
-}
-
-/* Telas grandes */
-@media (min-width: 769px) {
-  section.google > img {
-    width: 300px;
-    height: 100px;
   }
 
-  section.pesquisa > input {
-    width: 500px;
-  }
-}
-
-/* Adicione as seguintes media queries ao final do seu arquivo CSS */
-
-/* Smartphones */
-@media (max-width: 480px) {
-  /* ... seu código atual ... */
-}
-
-/* Tablets */
-@media (min-width: 481px) and (max-width: 768px) {
-  /* ... seu código atual ... */
-}
-
-/* Telas grandes */
-@media (min-width: 769px) {
-  section.google > img {
-    width: 300px;
-    height: 100px;
+  main {
+    width: auto;
+    justify-content: center;
   }
 
-  section.pesquisa > input {
-    width: 500px;
+  .container-wrapper {
+    width: 100%;
+  }
+
+  main img {
+    width: 50%;
   }
 
   footer {
-    position: relative; /* Removemos 'position: absolute;' */
-    margin-top: 50px; /* Adicionamos um espaçamento no topo do footer */
+    display: none;
   }
 }
-
-/* Landscape */
-@media screen and (orientation: landscape) {
-  footer {
-    position: relative;
-    margin-top: 50px;
-  }
-}
-
